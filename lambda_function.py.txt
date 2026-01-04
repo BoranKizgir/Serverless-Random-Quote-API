@@ -1,0 +1,21 @@
+import json
+import random
+
+def lambda_handler(event, context):
+    mesajlar = [
+        "Asla Pes Etme.",
+        "Hata yapmaktan korkma, her hata yeni bir öğrenme fırsatıdır.",
+        "AWS servislerini öğrenmek sana kapılar açar.",
+        "Serverless mimari ile sunucu yönetme derdine son!",
+        "Her Şey Bir Gün olurna Varır."
+    ]
+    
+    secilen_mesaj = random.choice(mesajlar)
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps({
+            'mesaj': secilen_mesaj,
+            'durum': 'Basarili'
+        }, ensure_ascii=False)
+    }
