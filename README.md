@@ -12,3 +12,4 @@ Ekran Görüntüleri
 ![](explanation_3.png)
 ![](explanation_4.png)
 ![](explanation_5.png)
+![](Serverless Random Quote API Architecture.drawio.png)
